@@ -1470,13 +1470,17 @@ a:hover {
     font-size: var(--text-lg);
     color: #ffffff;
     font-weight: bold;
-    transition: all var(--duration-fast) var(--ease-smooth);
+    cursor: default;
+    user-select: none;
+    transition: color var(--duration-fast) var(--ease-smooth), transform var(--duration-fast) var(--ease-bounce);
     text-shadow: 2px 2px 0 #000000;
+    display: inline-block;
 }
 
 .nav-logo:hover {
     color: var(--color-mario-yellow);
     transform: scale(1.05);
+    text-shadow: 3px 3px 0 #000000;
 }
 
 .nav-menu {
@@ -4612,13 +4616,19 @@ a:hover {
 
 .btn-resume {
     background: #ffd700;
-    color: #1a1a2e;
+    color: #1a1a2e !important;
     border: 3px solid #000000;
     box-shadow: 4px 4px 0 #000000;
+    /* Force dark text on yellow — readable in both light and dark themes */
+    -webkit-text-fill-color: #1a1a2e;
+    text-shadow: none;
+    font-weight: bold;
 }
 
 .btn-resume:hover {
     background: #ffb700;
+    color: #1a1a2e !important;
+    -webkit-text-fill-color: #1a1a2e;
     transform: translate(-2px, -2px);
     box-shadow: 6px 6px 0 #000000;
 }

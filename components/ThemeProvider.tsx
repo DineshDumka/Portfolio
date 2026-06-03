@@ -3,12 +3,12 @@
 import { useState, useEffect, ReactNode } from 'react';
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-    // Default to dark; read saved preference from localStorage if available
-    const [theme, setTheme] = useState<'light' | 'dark'>('dark');
+    // Default to light; reads saved preference from localStorage if available
+    const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
     useEffect(() => {
         const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
-        const resolved = savedTheme ?? 'dark';
+        const resolved = savedTheme ?? 'light';
         setTheme(resolved);
         document.documentElement.setAttribute('data-theme', resolved);
     }, []);

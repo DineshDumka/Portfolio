@@ -62,9 +62,9 @@ export function Navigation() {
     return (
         <nav className="nav">
             <div className="nav-container">
-                <Link href="/" className="nav-logo" onClick={() => setIsMenuOpen(false)}>
+                <span className="nav-logo" role="img" aria-label="Dinesh Dumka — Portfolio">
                     Hi, I&apos;m Dinesh!
-                </Link>
+                </span>
 
                 {/* Hamburger Menu Button */}
                 <button

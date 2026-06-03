@@ -109,7 +109,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" data-theme="dark">
+        <html lang="en" data-theme="light">
             <head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
                 <script
@@ -121,7 +121,7 @@ export default function RootLayout({
                 {/* Inline blocking script: reads localStorage and sets data-theme BEFORE paint — eliminates flash of wrong theme */}
                 <script
                     dangerouslySetInnerHTML={{
-                        __html: `(function(){try{var t=localStorage.getItem('theme');document.documentElement.setAttribute('data-theme',t==='light'?'light':'dark');}catch(e){}})();`,
+                        __html: `(function(){try{var t=localStorage.getItem('theme');document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'light');}catch(e){}})();`,
                     }}
                 />
                 <Navigation />
