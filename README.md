@@ -2,7 +2,7 @@
 
 My personal portfolio website. Built with a retro Mario pixel-game aesthetic and modern web tech.
 
-**🌐 Live Site**: [https://dineshdumka.dev](https://dineshdumka.dev)
+**🌐 Live Site**: https://dinesh-dumka.vercel.app/
 
 ## Why it looks like this
 
