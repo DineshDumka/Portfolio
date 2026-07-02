@@ -27,13 +27,14 @@ export const cpProfiles: CPProfile[] = [
         icon: '⚔',
         stats: [
             { label: 'Rating', value: '1928' },
-            { label: 'Problems', value: '1500+' },
+            { label: 'LC Solved', value: '700+' },
             { label: 'Global', value: 'Top 3%' },
         ],
         achievements: [
             'Peak rating 1928 — Knight',
-            'Top 3% globally',
-            '1500+ problems solved',
+            'Top 3% globally on LeetCode',
+            '700+ LeetCode problems solved',
+            '1500+ problems across all platforms',
         ],
     },
     {
@@ -151,7 +152,8 @@ export const cpProfiles: CPProfile[] = [
 export const globalAchievements = [
     { icon: '⚔', label: 'LeetCode Knight (1928)' },
     { icon: '⚡', label: 'Top 3% on LeetCode' },
-    { icon: '📊', label: '1500+ Problems Solved' },
+    { icon: '💻', label: '700+ LeetCode Problems Solved' },
+    { icon: '📊', label: '1500+ Problems Across All Platforms' },
     { icon: '🔵', label: 'Codeforces Pupil' },
     { icon: '⭐', label: 'CodeChef 3-Star' },
     { icon: '🔷', label: 'AtCoder 7 Kyu' },
