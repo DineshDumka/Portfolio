@@ -153,17 +153,6 @@ export function Navigation() {
                             Contact
                         </Link>
                     </li>
-                    <li>
-                        <a
-                            href="/resume.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="nav-link nav-link-resume"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Resume
-                        </a>
-                    </li>
                 </ul>
             </div>
 

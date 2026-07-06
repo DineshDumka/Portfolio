@@ -224,14 +224,6 @@ export function Hero() {
                     <a href="#projects" className="btn btn-3d">
                         View Work
                     </a>
-                    <a
-                        href="/resume.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn btn-resume btn-3d"
-                    >
-                        Resume
-                    </a>
                     <a href="#contact" className="btn btn-outline btn-3d">
                         Get in Touch
                     </a>
